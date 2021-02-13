@@ -24,6 +24,8 @@ app.get('/',(req,res)=>{
         res.sendFile('/index.html')
 })
 
-app.listen(4444,()=>{
-    console.log("server started")
+var port = 5000;
+
+app.listen(port,()=>{
+    console.log(`http://localhost: ${port}`);
 })
